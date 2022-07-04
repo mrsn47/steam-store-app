@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">steam_store_app</string>
+    <string name="windows">Windows</string>
+    <string name="linux">Linux</string>
+    <string name="mac">Mac</string>
+    <string name="categories">Categories</string>
+    <string name="genres">Genres</string>
+    <string name="publishers">Publishers</string>
+    <string name="developers">Developers</string>
+</resources>

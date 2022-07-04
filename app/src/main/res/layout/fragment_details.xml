@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailsConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A3245"
+    android:visibility="invisible"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/details_short_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:forceHasOverlappingRendering="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsHeaderImage"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+
+    <TextView
+        android:id="@+id/details_category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categories"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/details_categories"
+        app:layout_constraintStart_toStartOf="@+id/details_short_description"
+        app:layout_constraintTop_toTopOf="@+id/details_categories"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/details_genres_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/genres"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/details_genres"
+        app:layout_constraintEnd_toStartOf="@+id/details_genres"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/details_category_label"
+        app:layout_constraintTop_toTopOf="@+id/details_genres"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/details_categories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/details_category_label"
+        app:layout_constraintTop_toBottomOf="@+id/details_short_description"
+        tools:text="Cat1 Cat2 Cat3" />
+
+    <TextView
+        android:id="@+id/details_genres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/details_categories"
+        app:layout_constraintTop_toBottomOf="@+id/details_categories"
+        tools:text="Genre1 Genre2 Genre3" />
+
+    <TextView
+        android:id="@+id/details_developers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/details_genres"
+        app:layout_constraintTop_toBottomOf="@+id/details_genres"
+        tools:text="Dev1 Dev Dev3" />
+
+    <TextView
+        android:id="@+id/details_publishers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/details_developers"
+        app:layout_constraintTop_toBottomOf="@+id/details_developers"
+        tools:text="Pub1 Pub2 Pub3" />
+
+
+    <TextView
+        android:id="@+id/details_publishers_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/publishers"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/details_publishers"
+        app:layout_constraintEnd_toStartOf="@+id/details_publishers"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/details_developers_label"
+        app:layout_constraintTop_toTopOf="@+id/details_publishers"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/details_developers_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/developers"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/details_developers"
+        app:layout_constraintEnd_toStartOf="@+id/details_developers"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/details_genres_label"
+        app:layout_constraintTop_toTopOf="@+id/details_developers"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/detailsHeaderImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
